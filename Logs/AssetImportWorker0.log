@@ -4886,3 +4886,11 @@ Received Import Request.
 Start importing Assets using Guid(00000000000000001000000000000000) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '42d402b061de3733987d63b9cc3b64de') in 0.004820 seconds 
   Import took 0.009606 seconds .
 
+========================================================================
+Received Import Request.
+  Time since last request: 244.008759 seconds.
+  path: Assets/New Terrain.asset
+  artifactKey: Guid(0353a76bef2cd44c99cff7aaa8ba4f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/New Terrain.asset using Guid(0353a76bef2cd44c99cff7aaa8ba4f37) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da77d1dc855d096539204d89955eaf35') in 0.176540 seconds 
+  Import took 0.198184 seconds .
+
