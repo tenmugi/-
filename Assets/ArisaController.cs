@@ -4,21 +4,23 @@ using UnityEngine;
 
 public class ArisaController : MonoBehaviour
 {
-    Animator animator;
-    private float groundLevel = -0.3f;
+    private Animator myAnimator;
+    private Rigidbody myRigidbody;
+    private float velocityZ = 16f;
 
     // Start is called before the first frame update
     void Start()
     {
-        this.animator = GetComponent<Animator>();
+        this.myAnimator = GetComponent<Animator>();
+
+        this.myAnimator.SetFloat("Speed", 1);
+
+        this.myRigidbody = GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        this.animator.SetFloat("Horizonal", 1);
-
-        bool isGround = (transform.position.y > this.groundLevel) ? false : true;
-        this.animator.SetBool("isGround", isGround);
+        this.myRigidbody.velocity = new Vector3(0, 0, this.velocityZ);
     }
 }

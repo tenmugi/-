@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class CSVScript : MonoBehaviour
 {
@@ -35,7 +36,7 @@ public class CSVScript : MonoBehaviour
             {
                 level = 2;
             }
-            else if (values[2] == "上級")
+            else if (values[1] == "上級")
             {
                 level = 3;
             }
@@ -79,8 +80,7 @@ public class CSVScript : MonoBehaviour
             //最初の問題をみたい場合
             questions[1].ShowLog();
 
-            //１〜５問目からランダム
-            questions[Random.Range(1, 6)].ShowLog();
+            GetComponent<Text>().text = questions[1].question;
         }
     }
 
